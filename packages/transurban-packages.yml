@@ -1,0 +1,15 @@
+name: Transurban packages
+generated: '2026-10-22'
+method: none
+source: https://registry.npmjs.org/-/v1/search?text=transurban
+packages: []
+checked:
+- url: https://registry.npmjs.org/-/v1/search?text=transurban
+  status: 200
+  result: 0 packages
+- url: https://pypi.org/pypi/transurban/json
+  status: 404
+- url: https://api.github.com/orgs/transurban/repos?per_page=100
+  status: 200
+  result: 16 public repos, all forks/CI tooling (GitHub Actions, aws-cdk-github-actions, signalfx-go fork); no API client library
+note: No first-party SDK or client library found. npm @linkt/sdk (0.12.0) belongs to linkt-ai (github.com/linkt-ai), an unrelated company, not Transurban's Linkt tolling brand. Transurban publishes no public API or developer portal as of 2026-10-22.

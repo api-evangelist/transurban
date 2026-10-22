@@ -1,0 +1,24 @@
+name: Transurban MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  Checked, nothing found. Transurban does not publish an MCP server, either remote or local-stdio,
+  and it has no public OpenAPI from which to derive candidate tools. A web search for a Transurban
+  or Linkt MCP server or developer API (2026-10-22) turned up only community MCP servers for other
+  transit agencies (TransLink, Auckland Transport, Transitous). Pre-flight saw
+  https://api.transurban.com/mcp answer 403, and its control path also answered 403. That is
+  an opaque edge on a host we inferred and that Transurban never advertises, so it proves nothing
+  and is not recorded as an endpoint.
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+evidence:
+- url: https://www.transurban.com/llms.txt
+  status: 404
+- url: https://api.transurban.com/mcp
+  status: 403
+  note: inferred host, opaque (control path also 403); not called beyond pre-flight discovery probe

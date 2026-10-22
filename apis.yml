@@ -1,23 +1,89 @@
 aid: transurban
+
 name: Transurban
-description: 'Transurban is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Transurban is one of the world's largest toll-road operators, designing, building and operating urban toll roads in Melbourne, Sydney and Brisbane in Australia and in North America, and researching new vehicle and road technology. Its site links to the Linkt tolling brand (linkt.com.au) and Express Lanes (expresslanes.com). No public developer portal or API documentation was found on transurban.com as of 2026-10-22; the profile was added from the apidays Australia 2026 harvest.
+
 url: https://raw.githubusercontent.com/api-evangelist/transurban/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Toll Roads
+- Transportation
+- Infrastructure
+- Mobility
+- Australia
+- Motorways
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.transurban.com/content/dam/transurban/banners/banner_road_safety_incident_response_tint_1920x1000.jpg
+
 common:
+- type: Hosts
+  url: hosts/transurban-hosts.yml
+- type: Vendors
+  url: vendors/transurban-vendors.yml
+- type: DomainSecurity
+  url: security/transurban-domain-security.yml
 - type: Website
-  url: https://transurban.com/
+  url: https://www.transurban.com/
+- type: Newsroom
+  url: https://www.transurban.com/newsroom.html
+- type: Blog
+  url: https://medium.com/transurban
+- type: Support
+  url: https://www.transurban.com/contact-us.html
+- type: About
+  url: https://www.transurban.com/about-us.html
+- type: InvestorRelations
+  url: https://www.transurban.com/investor-centre.html
+- type: Careers
+  url: https://careers.transurban.com
+- type: GitHubOrganization
+  url: https://github.com/transurban
+- type: LinkedIn
+  url: https://linkedin.com/company/transurban
+- type: YouTube
+  url: https://youtube.com/user/transurbangroup
+- type: TermsOfService
+  url: https://www.transurban.com/terms-of-use.html
+- type: PrivacyPolicy
+  url: https://www.transurban.com/privacy.html
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website and pointers taken from transurban.com own pages; GitHub org verified by name Transurban, location Melbourne, blog careers.transurban.com. No developer portal/API docs found.
+  evidence:
+  - url: https://www.transurban.com/
+    status: 200
+  - url: https://github.com/transurban
+    status: 200
+  - url: https://medium.com/transurban
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

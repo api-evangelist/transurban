@@ -1,0 +1,73 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.transurban.com/privacy.html
+- https://www.transurban.com/terms-of-use.html
+policy_last_updated: May 2026
+jurisdiction_note: 'The privacy policy is written against the Australian Privacy Act / Australian Privacy Principles and covers Transurban and its subsidiaries including the Linkt retail brand; it points to separate country-specific policies for other operating countries.'
+signals:
+  data_subject_request:
+    url: https://www.transurban.com/privacy.html
+    section: '14. How can you access and correct your information?'
+    note: 'Establishes a right of access and correction via the Transurban Privacy Officer, free of fee but with possible cost recovery and identity verification. No erasure or portability right is stated.'
+    evidence:
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'You have a right to access the personal information that we hold about you. You may do so by contacting the Transurban Privacy Officer by email on'
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'If you think that any personal information we hold about you is inaccurate, you may contact us. We will take reasonable steps to make sure that the information is corrected.'
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'We will not charge you a fee for your access request, but we may recover from you our reasonable costs of supplying you with this information.'
+  ai_transparency:
+    url: https://www.transurban.com/privacy.html
+    note: 'Discloses use and development of AI systems over personal information, including chatbots, fraud detection, personalisation/predictive analytics and model training. No opt-out is described.'
+    evidence:
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'We may use and develop artificial intelligence systems to assist in the processing of personal information for the purpose of managing and improving the products and services we offer, including:'
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'Transurban takes all reasonable steps to ensure personal information processed via an artificial intelligence system does not become publicly available.'
+  data_residency:
+    url: https://www.transurban.com/privacy.html
+    section: '12. When do we disclose information overseas?'
+    note: 'Data is NOT kept in-country: personal information may go to offshore contractors and off-shore storage servers, with named destination countries. This is a cross-border disclosure statement, not a residency guarantee.'
+    evidence:
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'We may disclose personal information to contractors outside of Australia and may use off-shore servers for the purposes of data storage.'
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'We have engaged contractors in the Philippines, the United States, Portugal, France, India, Canada, New Zealand, South Africa, Sweden and certain other countries and may disclose certain personal information to those contractors.'
+  subprocessors:
+    url: https://www.transurban.com/privacy.html
+    section: '10. Who do we disclose your personal information to?'
+    note: 'Only CATEGORIES of recipients are disclosed (government agencies, toll operators, IT suppliers, debt collectors, etc.); no named subprocessor list was found.'
+    evidence:
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'information technology suppliers that provide support, maintenance and upgrade services for our systems, and'
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'under information sharing arrangements with the operators of other Australian toll roads'
+  data_retention:
+    url: https://www.transurban.com/privacy.html
+    section: '13. How do we secure your information?'
+    note: 'A purpose-limited retention principle only; no concrete retention periods are stated.'
+    evidence:
+    - source: https://www.transurban.com/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'Personal information is only retained for as long as is necessary for any purpose for which it may be used or disclosed under the Privacy Act or as otherwise required by law.'
+note: 'No incident/breach notification commitment, global privacy control, accessibility conformance statement, SBOM, transparency report, exit assistance or age assurance language was found on the privacy policy or terms of use. The privacy page mentions a Credit Reporting Policy "and Statement of Notifiable Matters" (credit reporting context, not a breach-notification commitment), so incident_notification is not recorded.'

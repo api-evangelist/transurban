@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/transurban/integrations
+- https://n8n.io/integrations/transurban/
+- https://composio.dev/toolkits/transurban
+- https://monid.ai/tools/transurban
+checked:
+- https://www.transurban.com/
+- https://www.linkt.com.au/help/commercial/transurban-invoice-manager.html
+- https://api.github.com/orgs/transurban/repos?per_page=100
+- https://composio.dev/toolkits/transurban
+- https://monid.ai/tools/transurban
+- https://n8n.io/integrations/transurban/
+- https://zapier.com/apps/transurban/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No public API, developer portal, marketplace listing or integrations page found. The closest data interface
+  is Linkt's Transurban Invoice Manager, a desktop program with a file specification, which is not an API integration.

@@ -1,0 +1,105 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 4
+  other_domain: 0
+  platform: 4
+  roles:
+  - api
+  - marketing
+  - other
+  - source
+  - website
+hosts:
+- host: api.transurban.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: transurban.com
+  role: api
+  relation: own
+- host: careers.transurban.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: transurban.com
+  role: marketing
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: medium.com
+  found_by:
+  - pointer
+  types:
+  - Blog
+  serves: []
+  registrable_domain: medium.com
+  role: marketing
+  relation: platform
+- host: transurban.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: transurban.com
+  role: other
+  relation: own
+- host: www.transurban.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Newsroom
+  - Support
+  - About
+  - InvestorRelations
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - cdn
+  vendor: fastly
+  registrable_domain: transurban.com
+  role: website
+  relation: own
+- host: youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
